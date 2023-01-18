@@ -1,0 +1,131 @@
+:root {
+  --transition: 0.3s;
+}
+* {
+  font-family: "Open Sans", sans-serif;
+  transition: var(--transition);
+}
+/* Start Header 1 */
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+  letter-spacing: 2px;
+}
+.btn-check:focus + .btn-primary,
+.btn-primary:focus {
+  box-shadow: none;
+}
+.navbar-light .navbar-brand {
+  font-size: 24px;
+  transition: var(--transition);
+}
+.navbar-dark .navbar-nav .nav-link {
+  font-size: 18px;
+}
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: rgba(255, 255, 255, 0.85);
+}
+.offcanvas-end {
+  width: 320px !important;
+}
+.offcanvas-end .btn-header-close {
+  top: 10px;
+  right: 15px;
+}
+.offcanvas-header {
+  background-color: rgb(13, 110, 253, 0.2);
+}
+.offcanvas-header img {
+  border: 5px solid rgb(13, 110, 253);
+  box-shadow: 0px 5px 17px #0d6efd;
+  width: 160px;
+}
+.offcanvas-body.profile .nav-link {
+  transition: var(--transition);
+}
+.offcanvas-body.profile .nav-link:hover {
+  padding-left: 10px;
+}
+/* End Header 1 */
+/* Start Header 2 */
+@media (max-width: 767px) {
+  .header-2 {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    top: auto;
+  }
+}
+.header-2 ul .nav-link i {
+  font-size: 26px;
+}
+/* End Header 2 */
+/* Start Landing */
+.landing {
+  height: calc(100vh - 121px);
+}
+.landing .btn:hover {
+  transform: scale(1.1);
+}
+/* End Landing */
+/* Start Services */
+.services {
+  background-color: #f6f6f7;
+}
+@media (max-width: 767px) {
+  .services .content {
+    width: 180px;
+  }
+}
+.services i {
+  width: 70px;
+}
+/* Start Features */
+.features .main-title::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #999;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 0;
+}
+.features .main-title h3 {
+  border-style: solid;
+  width: fit-content;
+  z-index: 12;
+  border-color: #999;
+  background-color: #fff;
+}
+.features .content {
+  border: 1px solid #888;
+  background-color: #f6f6f7;
+}
+.features .content .icons {
+  background-color: #fff;
+  border-bottom: 1px solid #777;
+  transform: translateY(-100px);
+  position: absolute;
+  z-index: 1;
+}
+.features .content .img {
+  background-image: linear-gradient(15deg, #f6f6f7 30%, #fff 30.1%);
+}
+.features .content:hover .img {
+  transform: translateY(20px);
+}
+.features .content:hover .icons {
+  transform: translate(0);
+}
+.features .content:hover h5 {
+  opacity: 0;
+}
+.features .content .icons i {
+  font-size: 22px;
+}
+.features .content:hover img {
+  transform: translateY(20px);
+}
+/* End Features */
